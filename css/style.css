@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header aside"
+    "main   aside"
+    "footer aside";
+  grid-template-columns: 75vw 25vw;
+  grid-template-rows: 25vh 55vh 20vh;
+  background-color: #e5e5e5;
+  font-family: "Oswald", sans-serif;
+}
+
+header {
+  grid-area: header;
+  background-color: tomato;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+#logo-nike {
+  width: 130px;
+  height: 50px;
+  margin: 90px 0px 0px 65px;
+}
+
+.change {
+  display: flex;
+  margin: 60px 65px 0px 0px;
+}
+
+.change span {
+  margin-right: 60px;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.change__arrows {
+  margin-top: 15px;
+  font-size: 2rem;
+  background-color: #000;
+  height: 60px;
+}
+
+.change__arrows i {
+  color: #fff;
+  padding: 15px;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #4ae6d3;
+}
+
+footer {
+  grid-area: footer;
+}
